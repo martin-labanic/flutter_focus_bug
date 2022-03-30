@@ -51,20 +51,8 @@ class _MyHomePageState extends State<MyHomePage> {
   final _form_key = GlobalKey<FormState>();
 
   void unfocusWidgets(BuildContext context) {
-    FocusScope.of(context).unfocus(); // No.
-
-    // WidgetsBinding.instance?.focusManager.primaryFocus?.unfocus(); // No.
-
-    // FocusManager.instance.primaryFocus?.unfocus(); // No.
-
-    // FocusScope.of(context).requestFocus(FocusNode()); // No.
-
-    // final current_focus = FocusScope.of(context); // No.
-    // if (!current_focus.hasPrimaryFocus) {
-    //   current_focus.requestFocus(FocusNode());
-    // }
+    FocusScope.of(context).unfocus();
   }
-
 
   @override
   Widget build(BuildContext context) {
